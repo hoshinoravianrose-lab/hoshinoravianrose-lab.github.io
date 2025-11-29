@@ -2,23 +2,26 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>BAR Signage Test</title>
+  <title>BAR サイネージ テスト</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       background: #000;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      overflow: hidden;
+    }
+    video {
+      width: 100vw;
       height: 100vh;
-      font-family: system-ui, sans-serif;
-      font-size: 2.5rem;
+      object-fit: cover; /* 動画を画面いっぱいに */
+      background: #000;
     }
   </style>
 </head>
 <body>
-  BARサイネージテスト画面
+  <video src="open1.mp4" autoplay muted loop playsinline></video>
 </body>
 </html>
